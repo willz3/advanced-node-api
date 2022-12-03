@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node dist/main/api",
+    "build": "rimraf dist && tsc"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,17 @@
   "bugs": {
     "url": "https://github.com/willz3/advanced-node-api/issues"
   },
-  "homepage": "https://github.com/willz3/advanced-node-api#readme"
+  "homepage": "https://github.com/willz3/advanced-node-api#readme",
+  "devDependencies": {
+    "@types/module-alias": "^2.0.1",
+    "@types/node": "^18.11.10",
+    "typescript": "^4.9.3"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.2",
+    "rimraf": "^3.0.2"
+  }
 }
